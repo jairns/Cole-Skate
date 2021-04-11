@@ -76,7 +76,6 @@ h3 {
 .letterSpace {
     letter-spacing: 4px;
 }
-
 /* Headings, paragraphs and links end */
 
 /* Text alignment start */
@@ -189,10 +188,12 @@ h3 {
     margin: 30px 20px 20px 20px;
 }
 
+/* Logo within navigation */
 .navHeader img {
     width: 15%;
 }
 
+/* Close nav icon start */
 .closeBtn {
     display: none;
     cursor: pointer;
@@ -228,7 +229,9 @@ h3 {
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
 }
+/* Close nav icon end */
 
+/* Navigation internal links start */
 .navLinks {
     height: 80vh;
     width: 100%;
@@ -251,16 +254,15 @@ nav ul li {
 
 }
 	
-/*Style for text within nav links*/
 nav ul li a {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-size: 2em;
     text-decoration: none;
-
 }
+/* Navigation internal links end */
 
-/* Naviagation external links */
+/* Navigation external links start */
 .navFooter {
     height: auto;
     width: 100%;
@@ -275,6 +277,8 @@ nav ul li a {
 .borderRightPink {
     border-right: 1px solid #D1898B;
 }
+/* Navigation external links end */
+
 /* Navigation end */
 
 /* Header content start */
@@ -358,6 +362,7 @@ button {
 .skateboardAnimate {
     offset-path: path('M1 27.7898C46.3333 45.6231 164.2 77.4898 273 62.2898C409 43.2898 532.5 -10.7102 640.5 3.28978C748.5 17.2898 799.5 25.2898 842 43.2898C884.5 61.2898 1059 141.29 1194 95.2898');
     animation: move 3000ms infinite alternate;
+    /* For browser compatibility */
     -webkit-animation: move 3000ms infinite alternate;
     -ms-animation: move 3000ms infinite alternate;
     -moz-animation: move 3000ms infinite alternate;
@@ -425,7 +430,6 @@ button {
 
 .reviews img {
     width: 60%;
-    /* width: 300px; */
     display: block;
     margin: 0 auto;
 }
@@ -475,7 +479,7 @@ footer a {
 footer img {
     width: 100px;
 }
-/* Footer Start */
+/* Footer end */
 
 /* Fix image dimensions */
 @media only screen and (max-width: 1000px) {
@@ -485,6 +489,7 @@ footer img {
         display: none;
     }
 
+    /* One item per width */
     .interview, .social {
         display: block;
     }
@@ -495,6 +500,7 @@ footer img {
         margin: 0 auto;
     }
 
+    /* Remove social image from above the text */
     .interviewSocial .social img:nth-child(1) {
         display: none;
     }
@@ -506,6 +512,7 @@ footer img {
         margin: 20px auto 20px auto;
     }
 
+    /* Display social image below the text */
     .interviewSocial .social img:nth-child(2) {
         display: block;
     }
